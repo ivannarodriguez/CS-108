@@ -1,0 +1,46 @@
+>>> import sys; print('%s %s' % (sys.executable or sys.platform, sys.version))
+>>> 
+/usr/bin/python3.5 3.5.2 (default, Nov 17 2016, 17:05:23) 
+[GCC 5.4.0 20160609]
+PyDev console: starting.
+>>> 3+4
+7
+>>> 2+3*5
+17
+>>> 8-4-2
+2
+>>> (3+7)*2
+20
+>>> 13%4
+1
+>>> 8.2\\4
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/code.py", line 64, in runsource
+    code = self.compile(source, filename, symbol)
+  File "/usr/lib/python3.5/codeop.py", line 168, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "/usr/lib/python3.5/codeop.py", line 99, in _maybe_compile
+    raise err1
+  File "/usr/lib/python3.5/codeop.py", line 87, in _maybe_compile
+    code1 = compiler(source + "\n", filename, symbol)
+  File "/usr/lib/python3.5/codeop.py", line 133, in __call__
+    codeob = compile(source, filename, symbol, self.flags, 1)
+  File "<input>", line 1
+    8.2\\4
+         ^
+SyntaxError: unexpected character after line continuation character
+>>> 
+>>> 8.2//4
+2.0
+>>> 2**10
+1024
+>>> 5.1%2
+1.0999999999999996
+>>> 210
+210
+>>> 210+(3-2)
+211
+>>> 210--5
+215
+>>> 5+(33**2+3)/10
+114.2
